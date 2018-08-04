@@ -179,7 +179,7 @@ object FutureOptionUsage extends App {
 
 ## Future の組み合わせ
 
-for式で、複数の Futur を組み合わせる
+for式で、複数の Future を組み合わせる
 
 ```scala
 import scala.concurrent.ExecutionContext.Implicits.global
@@ -225,6 +225,7 @@ object CompositeFuture extends App {
 - Promise
   - 成功あるいは失敗を表す値を設定することによって Future に変換することのできるクラス
   - 既存の処理などを非同期にして Future を作るときに使う
+  - Future の中間を媒介できるもの?
   - 指定した型の値を「与える」もの
 
 ```scala
